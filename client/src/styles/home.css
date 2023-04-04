@@ -1,0 +1,346 @@
+.home{
+    width: 70%;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cardBodyContent{
+    margin: 30px 0px;
+}
+.cartHeaderBorder{
+    
+    border-bottom: 1px solid #eee;
+}
+.statusModal{
+    position: absolute;
+    width: 40%;
+    align-items: center;
+    top: 15%;
+    left: 40%;
+    transform: translateX(-20% );
+    border: 1px solid rgba(0, 0, 0, 0.356);
+    border-radius: 5px;
+    box-shadow: 0px 0px 1.5px rgb(207, 206, 206);
+    background-color: white;
+    z-index: 999;
+}
+.status img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.status button {
+    width: 100%;
+    border: none;
+    border-radius: 40px;
+    text-align: left;
+    padding-left: 30px;
+}
+.showImages{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+}
+.showImage{
+    text-align: center;
+    margin: 10px;
+    position: relative;
+}
+.showImage > span{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    color: #dc3545;
+    border-radius: 50%;
+    border: 1px solid #dc3545;
+    height: 20px;
+    padding-bottom: 20px;
+    width: 20px;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+}
+
+.postImage{
+    width: 100%;
+    height: 100%;
+}
+.status_body > textarea {
+    width: 100%;
+    min-height: 150px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+.status_header{
+    padding: 7px;
+    border-bottom: 1px solid rgba(175, 175, 175, 0.452);
+    justify-content: space-between;
+    display: flex;
+}
+.status_footer{
+    padding: 20px;
+}
+#file{
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    cursor: pointer;
+   
+}
+.file_upload{
+    text-align: center;
+    height: auto;
+    width: 35px;
+    position: relative;
+}
+.file_upload > *{
+    margin: 5px;
+    font-size: 2rem;
+    cursor: pointer;
+    top: 5px;
+    z-index: 99;
+}
+.inputImage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.inputImage > :nth-child(1){
+    font-size: 2rem;
+    margin: 5px;
+    cursor: pointer;
+}
+.postCard{
+    border: 1px solid rgba(165, 165, 165, 0.445);
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 0.5px rgba(145, 143, 143, 0.342);
+}
+.cardHeader{
+    flex-direction: row;
+    text-decoration: none !important;
+color: black;
+}
+.cartHeaderInfo{
+    display: flex;
+    flex-direction: row;
+}
+.cartHeaderUser{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.postInfoImg{
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+}
+.close{
+    cursor:pointer !important;
+}
+.carouselImg{
+    height: 550px;
+    border-radius: 5px;
+}
+.cardHeaderFullName{
+    font-weight: 600 !important;
+}
+.more_horiz{
+    margin: 10px;
+}
+.cardIcon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart_icon_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.cart_icon_menu > *{
+    margin: 5px;
+}
+.cardIcon > i{
+    margin: 5px;
+}
+.likeComment{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+.commentInput{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid rgba(173, 168, 168, 0.205);
+}
+.commentInput > input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #eee;
+    height: 50px;
+    padding: 10px;
+}
+.commentPostSend{
+    height: 50px;
+    background-color: #eee;
+    color: blue;
+    border: none;
+    outline: none;
+}
+.commentPostSend:focus{
+    outline: none;
+}
+.commentCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 1;
+    margin: 0px 15px;
+    position: relative;
+}
+.smallAvatar{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+.mediumAvatar{
+    height: 85px;
+    width: 85px;
+    border-radius: 50% !important;
+}
+.commentCard > :nth-child(1){
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+.commentCard > :nth-child(2){
+    background-color: #eee;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.commentCard > :nth-child(1) > :nth-child(2){
+
+    margin-left: 5px;
+    color: black;
+    position: absolute;
+    margin-left: 40px;
+    top:8px;
+
+}
+.readMore{
+    cursor: pointer;
+    color: #dc3545;
+}
+.commentInfo{
+    margin-top: 8px;
+}
+.commentInfo > :not(:nth-child(1)){
+    margin-left: 10px;
+}
+.commentInfo > :nth-child(1){
+    color: rgba(0, 0, 0, 0.425);
+}
+.commentSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.editSection{
+    opacity: 0;
+    transition: 0.1s;
+}
+.commentSection:hover .editSection{
+    opacity: 1;
+    cursor: pointer;
+}
+.menuIcons{
+    position: relative;
+    align-items: center;
+    height: 30px;
+}
+.menuIcons > :nth-child(1){
+    top: 5px;
+    position: absolute;
+}
+.menuIcons > :nth-child(2){
+    position: absolute;
+    right: 20px;
+}
+.editComment{
+    width: 100%;
+    border: none;
+    overflow: auto;
+    resize: none;
+    height: 80px;
+    
+}
+.editComment:focus{
+    outline: none;
+}
+.commentContentSection{
+    width: 100%;
+}
+.replyArea{
+    width: 100%;
+    border: none;
+    resize: none;
+    overflow: auto;
+    height: 60px;
+}
+.replyArea:focus{
+    outline: none;
+}
+.reply{
+    margin-left: 40px;
+    margin-top: -10px;
+}
+.shareMain{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.sidebarMain > * >img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+.sidebarMain{
+    border: 1px solid #eee;
+    padding: 10px;
+    margin-top: 80px;
+}
+.notifMainNotif{
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    padding: 10px;
+    
+}
+.refreshIcon{
+    cursor: pointer;
+}
+.carousel-indicators{
+    display: none !important;
+}
+.displayNone{
+    display: none !important;
+}

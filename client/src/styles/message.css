@@ -1,0 +1,324 @@
+.message{
+    height: 100%;
+    margin-top: 80px;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.leftSideMessageMain{
+    width: 100%;
+}
+.leftSideMessageMain > :nth-child(1){
+    height: 40px;
+    position: relative;
+}
+.leftSideMessageMain > :nth-child(1) > input{
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(212, 210, 210);
+    border-radius: 3px;
+}
+.leftSideMessageMain > :nth-child(1) > input:focus{
+
+    outline: none !important;
+}
+.leftSideMessageMain > :nth-child(1) > button{
+
+    position: absolute;
+    right: 2px;
+    top: 7px;
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+    border: none;
+    z-index: 99;
+    color: #7cbafc;
+
+}
+.userSearchHover{
+    transition: 0.3s;
+}
+.userSearchHover:hover{
+    background-color: #eee;
+}
+.messageForm{
+    height: 80vh;
+}
+.messageForm > :nth-child(2){
+    position: relative;
+}
+.messageForm > :nth-child(2) > input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgb(207, 206, 206);
+}
+.messageForm > :nth-child(2) > input:focus{
+    outline: none;
+}
+.messageForm > :nth-child(2) > button{
+    position: absolute;
+    right: 5px;
+    top: 6px;
+    background-color:rgba(255, 255, 255, 0);
+    border: none;
+    border-left: 1px solid #eee;
+}
+.messageChat {
+    justify-content: end;
+    margin-bottom: 5px;
+    text-align: right;
+}
+.myMessage{
+    background-color: #7cbafc;
+    border-radius: 14px 14px 0px 14px;
+    padding: 5px;
+    margin-right: 20px;
+    text-align: left;
+}
+.otherMessage{
+    background-color: #eee;
+    border-radius: 14px 14px 14px 0px;
+    padding: 5px;
+    text-align: left;
+    margin-left: 20px;
+}
+.messageOtherChat{
+    justify-content: start;
+    margin-bottom: 5px;
+}
+.fileUpload{
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    cursor: pointer;
+}
+#file{
+    position: absolute;
+}
+.messageList{
+    margin-bottom: 0px;
+    overflow: auto;
+    border-bottom: 1px solid #ddd;
+border-left: 1px solid #ddd;
+}
+.mediaShow{
+    position: absolute;
+    top: -115px;
+    width: 100%;
+    height: 280%;
+    background-color: #eee;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 5px;
+    display: none;
+}
+.mediaShow.active{
+    display: flex;
+}
+.mediaActive{
+    margin-bottom: 120px !important;
+}
+
+.imageSendMessage{
+    height: 100px;
+    width: 100px;
+}
+.closeMedia{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: #dc143c;
+    border-radius: 50px ;
+    background-color: white;
+    width: 20px;
+    height: 23px;
+    text-align: center;
+    border: 1px solid #dc143c;
+    opacity: 0;
+    transition: 0.3s;
+    z-index: 99;
+}
+.mediaGroup{
+    display: flex;
+    position: relative;
+  
+}
+.mediaGroup:hover .closeMedia{
+    opacity: 1;
+    cursor: pointer;
+}
+.mediaSended{
+    max-height: 200px;
+}
+.mediaSendedShow{
+    margin: 5px 20px;
+}
+.formMessage > input{
+    border-radius: 5px;
+}
+.formMessage >.dropdown{
+    position: absolute;
+    top: 2px;
+    right: 65px;
+}
+.ml-1{
+    flex: 1;
+}
+.headerMessage{
+    background-color: #f0f0f0;
+    height: 40px;
+    box-shadow: 0px 1px 3px rgba(202, 202, 202, 0.699);
+    z-index: 99;
+    margin-bottom: 1px;
+    border-radius: 3px 3px 0px 0px;
+}
+.headerMessage > img{
+    margin: 5px 10px 5px 10px;
+}
+.headerMessage > span{
+    flex: 1;
+}
+.headerMessage > i{
+    margin-right: 20px;
+    cursor: pointer;
+    
+    text-align: center;
+}
+.headerMessage > i:hover{
+}
+.messageSection{
+    padding: 0 !important;
+
+}
+.leftSide{
+    height: 85%;
+}
+.messageDisplay {
+    position: relative;
+}
+.messageDisplay > div{
+    justify-content: space-between;
+}
+.messageDisplay.otherMessage > i{
+    background-color: blue;
+
+}
+.messageDisplay > i{
+    
+}
+.trashMyMessage {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    display: none;
+}
+.trashOtherMessage{
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    display: none;
+}
+.messageDisplay:hover .trashOtherMessage{
+    display: block;
+} 
+.messageDisplay:hover .trashMyMessage{
+    display: block;
+}
+.callModalMain{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+}
+.callModalForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    height: 70%;
+    width: 20%;
+    background-color: #007bff;;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px rgb(117, 116, 116);
+   
+}
+.callModalForm > :nth-child(1){
+    margin-top: 130px;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    
+}
+.callModalForm > :nth-child(2){
+    flex: 1;
+}
+.optionsCall> span{
+
+    margin: 20px;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    margin-top: 50px;
+}
+.optionsCall>:nth-child(1){
+    background-color: white;
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    color: red;
+    margin-bottom: 20px;
+}
+.optionsCall>:nth-child(2){
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: none;
+    color: red;
+    margin-left: 5px;
+}
+.optionsCall{
+    display: flex;
+
+}
+.videoPlayer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.videoPlayer > *{
+    border-radius: 5px;
+    margin-left: 5px;
+    width: 300px;
+    box-shadow: 0px 0px 8px #c6c0c0;
+}
+.end_call{
+    width: 50px;
+    position: relative;
+    top: 10px;
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+}
+.time_video{
+    position: relative;
+    top: 90px;
+    color: #343a40;
+}
+.VideoOption{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    top: -30px;
+    border-radius: 5px;
+}

@@ -1,0 +1,330 @@
+.ProfBase{
+    margin-top: 90px;
+}
+.info_content{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 25%;
+    justify-content: space-between;
+}
+.info_content > img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+.info_content_title{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 40px;
+}
+.info_content_follow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.info_content_follow > button{
+    background-color: white;
+    color: #20c997;
+    border:1px solid #20c997;
+    border-radius: 2px;
+    width: 150px;
+    height: 30px;
+}
+.number_follow_item > span{
+    color: #007bff;
+}
+.number_follow_item > :nth-child(2){
+    margin-left: 40px;
+}
+.number_follow_item {
+    display: flex;
+}
+
+.form_group{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.form_group > button{
+    margin-top: 120px;
+}
+.infoAvatar > span{
+    position:absolute ;
+    left:0px ;
+    top:120px ; 
+    color:white ;
+    display:none;
+    transition: 0.3s ease-in-out;
+    background-color: rgba(218, 146, 14, 0.534);
+    display: block;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    width: 100%;
+    height: 35px;
+    text-align: center;
+}
+.infoAvatar:hover span{
+    display: block !important;
+    top: 80px !important;
+}
+.inputInfoEdit
+{
+    display: flex;
+    z-index: 999;
+    width: 100%;
+    height: 40px;
+}
+.infoAvatar{
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+   width: auto;
+}
+
+.infoAvatar > span{
+    cursor: pointer;
+}
+.infoAvatar > span > input{
+    
+    height: 100%;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.infoAvatar > img{
+    object-fit: cover;
+    height: 110px;
+    width: 110px;
+}
+.form_group > form{
+    width: 400px;
+    background-color: white;
+    box-shadow: 0px 0px 2.25px rgb(155, 153, 153);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 90vh;
+}
+.formInput{
+    position: relative;
+}
+.formIcon{
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+}
+.profEditMain{
+    width:100%;
+     min-height:150vh;
+     position:absolute;
+     left:0px;
+     top:110px;
+     
+     z-index: 999;
+}
+.profEditMain > div > form {
+    box-shadow: 0px 0px 5px rgb(168, 168, 168);
+   
+}
+.profEditMain > div > form > button {
+
+    margin-bottom: 20px;
+
+}
+.followMain{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    margin-top: 20px;
+}
+.followers{
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    height: 60%;
+    width: auto;
+    box-shadow: 0px 0px 1.2px rgba(100, 99, 99, 0.808);
+    padding: 5px;
+    z-index: 99
+    ;
+}
+.followersList{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.followersList > *{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.followersTitle{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+    margin: 10px;
+    padding-bottom: 10px;
+}
+.followButton{
+    height: 30px;
+    width: 80px;
+    outline: none !important;
+    background-color: white;
+    border: 1px solid #007bff;
+    color: #007bff;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.followButton:hover{
+    background-color: #007bff;
+    color: white;
+
+}
+.unFollowButton{
+    height: 30px;
+    width: 80px;
+    outline: none !important;
+    background-color: white;
+    border: 1px solid #dc3545;
+    color: #dc3545;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.unFollowButton:hover{
+    background-color: #dc3545;
+    color: white;
+}
+.followersInfo{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: -5px;
+}
+.followersImg{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-top: -2px;
+}
+.followerInfo{
+    display: flex;
+    flex-direction: row;
+}
+.followerInfo > :nth-child(1){
+    margin-right: 10px;
+}
+.profilePost ,  .profilePosts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid #eee;
+}
+.profilePost > * {
+    text-align: center;
+    padding: 5px 0;
+}
+
+.postItem{
+    position: relative;
+    width: auto;
+} 
+.postItem > img{
+    height: 300px;
+    width: 300px;
+}
+.postItem > video{
+    height: 300px;
+    width: 300px;
+}
+@media (max-width: 1100px) {
+    .profilePost , .profilePosts{  grid-template-columns: 1fr 1fr;}
+    .postItem{
+        position: relative;
+        width: 200px;
+    } 
+    .postItem > img{
+        height: 250px;
+        width: 250px;
+    }
+    .postItem > video{
+        height: 300px;
+        width: 250px;
+    }
+} 
+.post_thumb_menu{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50% , -50%);
+    color: white;
+    opacity: 0;
+    transition: 0.3s;
+
+}
+.postItem:hover .post_thumb_menu{
+    opacity: 1;
+} 
+.postItem:hover {
+opacity: 0.7;
+}
+.post_thumb_menu > *{
+    margin: 5px;
+    font-size: 20px;
+    
+}
+.productDetails{
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.productDetails{
+    margin-top: 50px;
+}
+.savePostOptions{
+    text-align: center;
+    margin-bottom: -30px;
+}
+.savePostOptions > *{
+    margin-left: 10px;
+    font-weight: 500;
+   cursor: pointer;
+   
+   font-size: 20px;
+   padding: 9px;
+   overflow: hidden;
+  
+}
+.savePostOptions >.active{
+    box-shadow: 0px -1px 0px 1px #eee;
+    border-bottom: 5px solid white;
+}
+.noPost{
+    width: 70%;
+    font-size: 50px;
+    margin-top: 43px;
+}
+.singlePost{
+    margin-top: 100px;
+}

@@ -1,0 +1,14 @@
+.discoverMain{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    grid-gap: 10px;
+    margin-top: 40px;
+    padding-top: 40px;
+}
+.discoverMainSingle{
+    grid-template-columns: 1fr;
+}
